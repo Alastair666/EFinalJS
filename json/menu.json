@@ -50,7 +50,7 @@
                                     },
                                     {
                                         "nombre" : "href",
-                                        "valor" : "../index.html"
+                                        "valor" : "../app/index.html"
                                     }
                                 ],
                                 "elementos" : [
@@ -75,7 +75,7 @@
                                     },
                                     {
                                         "nombre" : "href",
-                                        "valor" : "../historial.html"
+                                        "valor" : "../app/historial.html"
                                     }
                                 ],
                                 "elementos" : [

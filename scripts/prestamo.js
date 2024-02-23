@@ -135,7 +135,7 @@ function configuraControlesCaptura(tipoControl, valorIngresado){
                         const inputMontoIngresado = document.querySelector("input#inputMontoIngresado")
                         //Registrando en Historial
                         let prestamoS = recuperarPrestamoSeleccionado()
-                        registraHistorial("Visualizó el prestamo", `Confirmo detalles del ${prestamoS.descripcion} #${prestamoS.id}`)
+                        registraHistorial("Visualizó el prestamo", `Confirmo detalles del ${prestamoS.descripcion} #${prestamoS.no}`)
                         let monto = inputMontoIngresado.value.trim() === "" ? 0 : parseFloat(inputMontoIngresado.value)
                         configuraControlesCaptura("MontoSolicitado", inputMontoIngresado.value)
                         if (monto <= 0)
@@ -198,7 +198,7 @@ function construyeTablaAmortizacion(){
             btnConfirmarPrestamo.addEventListener("click", ()=>{
                 //Registrando en Historial
                 let prestamoS = recuperarPrestamoSeleccionado()
-                registraHistorial("Confirmó el prestamo", `Acepto los detalles del ${prestamoS.descripcion} #${prestamoS.id}`)
+                registraHistorial("Confirmó el prestamo", `Acepto los detalles del ${prestamoS.descripcion} #${prestamoS.no}`)
                 //Mostrando Mensaje
                 Swal.fire({
                     title: `<strong>Prestamo Confirmado</strong>`,

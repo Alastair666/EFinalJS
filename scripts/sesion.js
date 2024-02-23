@@ -29,7 +29,7 @@ function registraHistorial(accion, detalle) {
 const UrlUsers = "../json/users.json"
 // Validando Sesión Vigente
 async function validaSesion(){
-    let retorno = false
+    let retorno = false, user
     const login = localStorage.getItem("accessToken")
     if (login != null){
         if (login != ""){
@@ -37,11 +37,11 @@ async function validaSesion(){
             if (response.ok) {
                 let users = await response.json()
                 let id = login.split(".")
-                let user = users.find((u)=> u.id === parseInt(id[0]) && encriptaCadena(u.password) === id[1])
-                if (user != null)
-                    retorno = true
-                else
-                    retorno = false
+                user = users.find((u)=> u.id === parseInt(id[0]))
+                if (user != null){
+                    if (encriptaCadena(user.password) === id[1])
+                        retorno = true
+                }
             }
         }
     }
@@ -57,12 +57,11 @@ function encriptaCadena(cadena) {
         hash = ((hash << 5) - hash) + char;
         hash = hash & hash;
     }
-    return hash;
+    return hash.toString();
 }
 
-async function inicializaMain(){
+async function inicializaSeguridad(){
     let retorno = await validaSesion()
-    console.log(retorno)
     if (!retorno){
         localStorage.clear()
         location.href = "../login.html"
@@ -77,4 +76,4 @@ async function inicializaMain(){
     }
 }
 
-inicializaMain()
+inicializaSeguridad()
