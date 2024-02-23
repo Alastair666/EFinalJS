@@ -30,18 +30,19 @@ const UrlUsers = "../json/users.json"
 // Validando Sesión Vigente
 async function validaSesion(){
     let retorno = false
-    const login = localStorage.getItem("accessToken") || ""
-    if (login != ""){
-
-        let response = await fetch(UrlUsers)
-        if (response.ok) {
-            let users = await response.json()
-            let id = login.split(".")
-            let user = users.find((u)=> u.id === parseInt(id[0]) && encriptaCadena(u.password) === id[1])
-            if (user != null)
-                retorno = true
-            else
-                retorno = false
+    const login = localStorage.getItem("accessToken")
+    if (login != null){
+        if (login != ""){
+            let response = await fetch(UrlUsers)
+            if (response.ok) {
+                let users = await response.json()
+                let id = login.split(".")
+                let user = users.find((u)=> u.id === parseInt(id[0]) && encriptaCadena(u.password) === id[1])
+                if (user != null)
+                    retorno = true
+                else
+                    retorno = false
+            }
         }
     }
     return retorno
@@ -59,8 +60,9 @@ function encriptaCadena(cadena) {
     return hash;
 }
 
-function inicializaMain(){
-    let retorno = validaSesion()
+async function inicializaMain(){
+    let retorno = await validaSesion()
+    console.log(retorno)
     if (!retorno){
         localStorage.clear()
         location.href = "../login.html"
