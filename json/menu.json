@@ -1,0 +1,99 @@
+[
+    {
+        "tipo" : "nav",
+        "atributos" : [
+            {
+                "nombre" : "id",
+                "valor" : "sidenavAccordion"
+            },
+            {
+                "nombre" : "class",
+                "valor" : "sb-sidenav accordion sb-sidenav-dark"
+            }
+        ],
+        "elementos" : [
+            {
+                "tipo" : "div",
+                "atributos" : [
+                    {
+                        "nombre" : "class",
+                        "valor" : "sb-sidenav-menu"
+                    }
+                ],
+                "elementos" : [
+                    {
+                        "tipo" : "div",
+                        "atributos" : [
+                            {
+                                "nombre" : "class",
+                                "valor" : "nav"
+                            }
+                        ],
+                        "elementos" : [
+                            {
+                                "contenido" : "Core",
+                                "tipo" : "div",
+                                "atributos" : [
+                                    {
+                                        "nombre" : "class",
+                                        "valor" : "sb-sidenav-menu-heading"
+                                    }
+                                ]
+                            },
+                            {
+                                "contenido" : "Prestamos",
+                                "tipo" : "a",
+                                "atributos" : [
+                                    {
+                                        "nombre" : "class",
+                                        "valor" : "nav-link"
+                                    },
+                                    {
+                                        "nombre" : "href",
+                                        "valor" : "../index.html"
+                                    }
+                                ],
+                                "elementos" : [
+                                    {
+                                        "tipo" : "div",
+                                        "atributos" : [
+                                            {
+                                                "nombre" : "class",
+                                                "valor" : "sb-nav-link-icon"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "contenido" : "Historial",
+                                "tipo" : "a",
+                                "atributos" : [
+                                    {
+                                        "nombre" : "class",
+                                        "valor" : "nav-link"
+                                    },
+                                    {
+                                        "nombre" : "href",
+                                        "valor" : "../historial.html"
+                                    }
+                                ],
+                                "elementos" : [
+                                    {
+                                        "tipo" : "div",
+                                        "atributos" : [
+                                            {
+                                                "nombre" : "class",
+                                                "valor" : "sb-nav-link-icon"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

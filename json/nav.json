@@ -1,0 +1,177 @@
+[
+    {
+        "contenido" : "Cotizador",
+        "tipo" : "a",
+        "atributos" : [
+            {
+                "nombre" : "id",
+                "valor" : "tituloIndex"
+            },
+            {
+                "nombre" : "class",
+                "valor" : "navbar-brand ps-3"
+            },
+            {
+                "nombre" : "href",
+                "valor" : "../app/index.html"
+            }
+        ]
+    },
+    {
+        "tipo" : "button",
+        "atributos" : [
+            {
+                "nombre" : "id",
+                "valor" : "sidebarToggle"
+            },
+            {
+                "nombre" : "class",
+                "valor" : "btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
+            },
+            {
+                "nombre" : "href",
+                "valor" : "#!"
+            }
+        ],
+        "elementos" : [
+            {
+                "tipo" : "i",
+                "atributos" : [
+                    {
+                        "nombre" : "class",
+                        "valor" : "fas fa-bars"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tipo" : "ul",
+        "atributos" : [
+            {
+                "nombre" : "class",
+                "valor" : "navbar-nav ms-auto ms-md-0 me-3 me-lg-4"
+            }
+        ],
+        "elementos" : [
+            {
+                "tipo" : "li",
+                "atributos" : [
+                    {
+                        "nombre" : "class",
+                        "valor" : "nav-item dropdown"
+                    }
+                ],
+                "elementos" : [
+                    {
+                        "tipo" : "a",
+                        "atributos" : [
+                            {
+                                "nombre" : "id",
+                                "valor" : "navbarDropdown"
+                            },
+                            {
+                                "nombre" : "class",
+                                "valor" : "nav-link dropdown-toggle"
+                            },
+                            {
+                                "nombre" : "href",
+                                "valor" : "#"
+                            },
+                            {
+                                "nombre" : "role",
+                                "valor" : "button"
+                            },
+                            {
+                                "nombre" : "data-bs-toggle",
+                                "valor" : "dropdown"
+                            },
+                            {
+                                "nombre" : "aria-expanded",
+                                "valor" : "false"
+                            }
+                        ],
+                        "elementos" : [
+                            {
+                                "tipo" : "i",
+                                "atributos" : [
+                                    {
+                                        "nombre" : "class",
+                                        "valor" : "fas fa-user fa-fw"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "tipo" : "ul",
+                        "atributos" : [
+                            {
+                                "nombre" : "class",
+                                "valor" : "dropdown-menu dropdown-menu-end"
+                            },
+                            {
+                                "nombre" : "aria-labelledby",
+                                "valor" : "navbarDropdown"
+                            }
+                        ],
+                        "elementos" : [
+                            {
+                                "tipo" : "li",
+                                "elementos" : [
+                                    {
+                                        "tipo" : "a",
+                                        "contenido" : "Datos de Usuario",
+                                        "atributos" : [
+                                            {
+                                                "nombre" : "class",
+                                                "valor" : "dropdown-item"
+                                            },
+                                            {
+                                                "nombre" : "id",
+                                                "valor" : "liUserData"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "tipo" : "li",
+                                "elementos" : [
+                                    {
+                                        "tipo" : "hr",
+                                        "atributos" : [
+                                            {
+                                                "nombre" : "class",
+                                                "valor" : "dropdown-divider"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "tipo" : "li",
+                                "elementos" : [
+                                    {
+                                        "tipo" : "a",
+                                        "contenido" : "Cerrar Sesión",
+                                        "atributos" : [
+                                            {
+                                                "nombre" : "class",
+                                                "valor" : "dropdown-item"
+                                            },
+                                            {
+                                                "nombre" : "href",
+                                                "valor" : "../login.html"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

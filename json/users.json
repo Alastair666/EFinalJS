@@ -1,0 +1,30 @@
+[
+    {
+        "id" : 1,
+        "first_name" : "Limón",
+        "last_name" : "Carlos",
+        "password" : "psswrd20NERV",
+        "email" : "climon@coderhouse.com"
+    },
+    {
+        "id" : 2,
+        "first_name" : "Motura",
+        "last_name" : "Diana",
+        "password" : "psswrd20NERV",
+        "email" : "dmotura@coderhouse.com"
+    },
+    {
+        "id" : 3,
+        "first_name" : "Limón",
+        "last_name" : "Carlos",
+        "password" : "psswrd20TECTOS",
+        "email" : "climon@tectos.com.mx"
+    },
+    {
+        "id" : 4,
+        "first_name" : "Guess",
+        "last_name" : "User",
+        "password" : "1234",
+        "email" : "invitado@guess.com"
+    }
+]
